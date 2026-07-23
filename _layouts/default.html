@@ -5,23 +5,39 @@
 
 <body>
 
- <header class="site-nav">
-  <div class="wrapper">
-    <a class="site-nav-brand" href="{{ '/' | relative_url }}">
-      <img src="/assets/images/nadine.png" alt="Nadine Hamada" class="site-nav-photo">
-      <div class="site-nav-text">
-        <span class="site-nav-name">{{ site.title }}</span>
-        <span class="site-nav-tagline">ML/AI researcher — quantum-inspired NLP</span>
+{% if page.layout == "home" %}
+  <header class="profile-header">
+    <img src="/assets/images/nadine.png" alt="Profile photo" class="profile-photo">
+    <div class="profile-text">
+      <h1>Nadine Hamada</h1>
+      <p class="tagline">ML/AI researcher — quantum-inspired NLP</p>
+      <div class="profile-links">
+        <a href="https://github.com/NadineHamada">GitHub</a>
+        <a href="https://orcid.org/0009-0009-6349-4080">ORCID</a>
+        <a href="https://linkedin.com/in/nadinehamada">LinkedIn</a>
+        <a href="https://arxiv.org/a/yourname">arXiv</a>
       </div>
-    </a>
-    <div class="site-nav-links">
-      <a href="https://github.com/NadineHamada">GitHub</a>
-      <a href="https://orcid.org/0009-0009-6349-4080">ORCID</a>
-      <a href="https://linkedin.com/in/nadinehamada">LinkedIn</a>
-      <a href="https://arxiv.org/a/yourname">arXiv</a>
     </div>
-  </div>
   </header>
+{% else %}
+  <header class="site-nav">
+    <div class="wrapper">
+      <a class="site-nav-brand" href="{{ '/' | relative_url }}">
+        <img src="/assets/images/nadine.png" alt="Nadine Hamada" class="site-nav-photo">
+        <div class="site-nav-text">
+          <span class="site-nav-name">{{ site.title }}</span>
+          <span class="site-nav-tagline">ML/AI researcher — quantum-inspired NLP</span>
+        </div>
+      </a>
+      <div class="site-nav-links">
+        <a href="https://github.com/NadineHamada">GitHub</a>
+        <a href="https://orcid.org/0009-0009-6349-4080">ORCID</a>
+        <a href="https://linkedin.com/in/nadinehamada">LinkedIn</a>
+        <a href="https://arxiv.org/a/yourname">arXiv</a>
+      </div>
+    </div>
+  </header>
+{% endif %}
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
