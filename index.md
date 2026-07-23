@@ -2,7 +2,7 @@
 layout: home
 title: Home
 ---
-![Profile photo](/assets/images/profile.jpg){: width="180" style="border-radius:50%;" }
+![Profile photo](/assets/images/nadine.jpg){: width="180" style="border-radius:50%;" }
 I'm an ML/AI researcher working on quantum-inspired NLP.
 This is where I write up research notes and background pieces.
 
