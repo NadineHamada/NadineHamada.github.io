@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: 
 ---
 
 <div class="profile-header">
