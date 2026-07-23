@@ -17,12 +17,15 @@ h1, h2, h3 {
 /* ---- Profile header (used on layout: home) ---- */
 
 .profile-header {
+  border-bottom: 1px solid $grey-color-light;
+  padding: 1.5rem 0;
+}
+
+.profile-header .wrapper {
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 1.5rem;
 }
-
 .profile-photo {
   width: 160px;
   height: 160px;
