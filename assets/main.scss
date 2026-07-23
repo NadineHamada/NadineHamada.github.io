@@ -144,7 +144,23 @@ h1, h2, h3 {
   }
 }
 
+/* ---- Site-wide nav ---- */
 
+.site-nav {
+  border-bottom: 1px solid $grey-color-light;
+  padding: 1rem 0;
+}
+
+.site-nav-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $text-color;
+  text-decoration: none;
+}
+
+.site-nav-title:hover {
+  color: $brand-color;
+}
 /* ---- Persistent header / nav ---- */
 
 .site-nav {
