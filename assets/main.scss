@@ -199,3 +199,34 @@ h1, h2, h3 {
   font-size: 0.8rem;
   margin: 0;
 }
+
+/* ---- Footnotes / References ---- */
+
+.footnote,
+.footnotes a {
+  color: $brand-color;
+}
+
+.footnotes {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: $grey-color-dark;
+}
+
+.footnotes > hr {
+  display: none;
+}
+
+.footnotes ol {
+  padding-left: 1.2rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.reversefootnote {
+  margin-left: 0.3rem;
+  text-decoration: none;
+}
