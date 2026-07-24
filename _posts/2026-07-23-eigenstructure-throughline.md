@@ -24,6 +24,13 @@ $$
 P(x) = \left| \langle x | \psi \rangle \right|^2
 $$
 
+
+$$
+\int_{-\infty}^{\infty} e^{-x^2}\, dx = \sqrt{\pi}
+$$
+
+
+
 A code block:
 
 ```python
