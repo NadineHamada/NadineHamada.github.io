@@ -24,7 +24,7 @@ The key challenge is that the learner does not observe the true rule that genera
 
 ---
 
-### Learning **A Pattern** not find **rule**
+### Learning a **Pattern** not find a **Rule**
 
 The data available to a learning algorithm represents only a small sample of the real world. From this limited evidence, many different patterns or rules may appear consistent with the observations.
 
