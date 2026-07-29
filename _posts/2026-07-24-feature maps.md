@@ -48,14 +48,14 @@ The question is representation vs  similarities(is thereothers?? ) or it s trans
 
 
 ## 2 types of feature transformation: 
-  there are 2 types of feature transformation 
+  there are 2 types of feature transformations 
 ### Feature Expansion (Lifting) 
 the kernel trick here 
 
 ### Dimensionality Reduction (Feature Extraction) 
 
 
-2 different ways to impliment those tras
+2 different ways to impliment those transformations
 ### Classical Feature Maps
 
 
