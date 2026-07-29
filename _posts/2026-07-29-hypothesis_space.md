@@ -4,8 +4,6 @@ title: "Hypothesis Spaces H: From Classical Search to Quantum Superposition"
 date: 2026-07-23
 categories: [Computational Learning Theory]
 ---
-# Hypothesis Spaces $H$: From Classical Search to Quantum Superposition
-
 ## Background
 
 In classical ML, the fundamental question of computational learning theory is: how can a machine infer a general concept from a finite number of examples?
