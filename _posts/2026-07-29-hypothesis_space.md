@@ -6,7 +6,8 @@ categories: [Computational Learning Theory]
 ---
 ## Background
 
-In classical ML, the fundamental question of computational learning theory is: how can a machine infer a general concept from a finite number of examples?
+In classical ML, the fundamental question of computational learning theory is:
+> how can a machine infer a general concept from a finite number of examples?
 
 A learning algorithm is given a finite dataset, where each example pairs an input x with an observed output y.
 From these examples, the algorithm must construct a rule capable of predicting outputs for inputs it has never seen.
