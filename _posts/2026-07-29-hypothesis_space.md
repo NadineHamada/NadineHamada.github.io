@@ -18,7 +18,7 @@ This is where the hypothesis space **_H_** enters: it is the full set of candida
 that the learner is willing to entertain.
 Each $$h_i \in H$$ is one candidate rule. The learning problem reduces to a search problem over $$H$$ — find the $$h_i$$ that best explains the observed $$(x, y)$$ pairs, in the hope that it generalizes correctly to data not yet seen.
 
-## What operations can we define between the $$h_i$$ of **_H_**?
+## What operations can we define between the $$h_i$$ of $$H$$?
 
 Classically, there are four families of operations that let a learner move around, compare, or combine members of $$H$$:
 
