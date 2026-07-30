@@ -16,8 +16,12 @@ The key challenge is that the learner never observes the true rule that generate
 of examples and must infer the hidden structure behind them.
 Learning, therefore, is not simply a process of memorizing examples, but a process of finding a reliable explanation among many possible explanations, based on limited evidence.
 
-This is where the hypothesis space ***H*** enters: it is the full set of candidate explanations \{h_1, h_2, \dots, h_n\} that the learner is willing to entertain.
- Each \(h_i \in H\) is one candidate rule. The learning problem reduces to a search problem over $H$ — find the $h_i$ that best explains the observed \(x, y\) pairs, in the hope that it generalizes correctly to data not yet seen.
+This is where the hypothesis space ***H*** enters: it is the full set of candidate explanations \(H = \{h_1, h_2, \dots, h_n\}\) that the learner is willing to entertain.
+Each
+\[
+h_i \in H
+\]
+is one candidate rule. The learning problem reduces to a search problem over $H$ — find the $h_i$ that best explains the observed \(x, y\) pairs, in the hope that it generalizes correctly to data not yet seen.
 
 ## What operations can we define between the $h_i$ of ***H***?
 
