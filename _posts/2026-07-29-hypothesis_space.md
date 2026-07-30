@@ -14,14 +14,21 @@ A learning algorithm is given a finite dataset, where each example pairs an inpu
 
 This is where the hypothesis space $H$ enters: it is the full set of candidate explanations $\{h_1, h_2, \dots, h_n\}$ that the learner is willing to entertain. Each $h_i \in H$ is one candidate rule. The learning problem reduces to a search problem over $H$ — find the $h_i$ that best explains the observed $(x, y)$ pairs, in the hope that it generalizes correctly to data not yet seen.
 
-## What operations can we define between the $h_i$ of $H$?
+## What operations can we define between the $h_i$ of ***H***?
 
-Classically, there are four families of operations that let a learner move around, compare, or combine members of $H$:
+Classically, there are four fundamental families of operations that allow a learner to navigate, compare, and combine hypotheses in the hypothesis space (H):
 
-1. **Ordering (generality relation)** — $h_i \geq_g h_j$ if $h_i$'s predictions cover a superset of what $h_j$ covers. This partial order is the basis of Mitchell's version-space / Candidate-Elimination algorithm: the search maintains a most-general boundary ($G$) and most-specific boundary ($S$), and learning narrows the space between them as evidence arrives.
-2. **Combination (ensembling)** — building a new hypothesis from several existing ones: weighted averaging (bagging, Bayesian model averaging), majority voting (random forests), or boosting (sequential re-weighting).
-3. **Composition** — chaining hypotheses, $h = h_j \circ h_i$. This is literally what a deep network's layers do: each layer is a hypothesis operating on the output of the previous one.
-4. **Local movement (search operators)** — specialization/generalization steps in symbolic learning, or gradient steps $h_{t+1} = h_t - \eta \nabla L(h_t)$ in continuous, parametrized $H$.
+1. **Ordering (generality relation)** — (h_i \geq_g h_j) if the predictions of (h_i) cover a superset of those covered by (h_j). This partial order underlies Mitchell's Version Space and Candidate-Elimination algorithm, which maintains a **most-general boundary** ((G)) and a **most-specific boundary** ((S)). As new evidence arrives, learning progressively narrows the version space between these two boundaries.
+
+2. **Combination (ensembling)** — constructing a new hypothesis from multiple existing hypotheses. Common examples include weighted averaging (e.g., bagging and Bayesian model averaging), majority voting (e.g., random forests), and boosting, which sequentially reweights training examples to build stronger predictors.
+
+3. **Composition** — chaining hypotheses together, (h = h_j \circ h_i). This is precisely the mechanism used by deep neural networks, where each layer implements a hypothesis that operates on the output of the preceding layer.
+
+4. **Local movement (search operators)** — moving through the hypothesis space via incremental updates. In symbolic learning, this corresponds to generalization and specialization operators, while in continuous parameter spaces it is typically achieved through optimization steps such as gradient descent:
+   [
+   h_{t+1} = h_t - \eta \nabla L(h_t).
+   ]
+
 
 ## What are their limitations?
 
