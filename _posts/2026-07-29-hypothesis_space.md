@@ -14,7 +14,7 @@ A learning algorithm is given a finite dataset, where each example pairs an inpu
 
 This is where the hypothesis space $H$ enters: it is the full set of candidate explanations $\{h_1, h_2, \dots, h_n\}$ that the learner is willing to entertain. Each $h_i \in H$ is one candidate rule. The learning problem reduces to a search problem over $H$ — find the $h_i$ that best explains the observed $(x, y)$ pairs, in the hope that it generalizes correctly to data not yet seen.
 
-## What operations can we define between the $h_i$ of ***H***?
+## What operations can we define between the h_i of ***H***?
 
 Classically, there are four fundamental families of operations that allow a learner to navigate, compare, and combine hypotheses in the hypothesis space (H):
 
