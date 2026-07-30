@@ -16,7 +16,11 @@ The key challenge is that the learner never observes the true rule that generate
 of examples and must infer the hidden structure behind them.
 Learning, therefore, is not simply a process of memorizing examples, but a process of finding a reliable explanation among many possible explanations, based on limited evidence.
 
-This is where the hypothesis space ***H*** enters: it is the full set of candidate explanations  $$H = \{h_1, h_2, \dots, h_n\}$$ that the learner is willing to entertain.
+This is where the hypothesis space ***H*** enters: it is the full set of candidate explanations 
+
+$$H = \{h_1, h_2, \dots, h_n\}$$ 
+
+that the learner is willing to entertain.
 Each
 \[
 h_i \in H
