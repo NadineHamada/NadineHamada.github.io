@@ -48,3 +48,9 @@ This is where a quantum (or quantum-inspired) reformulation of $$H$$ changes the
 - **Interference replaces additive combination.** Because amplitudes can be complex, two hypotheses can constructively interfere (reinforcing an explanation consistent with multiple constraints) or destructively interfere (cancelling one inconsistent with the evidence) — as part of the evolution itself, before any measurement. This is the operation classical ensembling structurally cannot perform: probabilities can only add, never cancel.
 - **Tunneling replaces gradient descent's local trap.** If the search for the best $$h_i$$ is recast as finding the ground state of a Hamiltonian, the system can, in principle, tunnel through energy barriers separating local minima rather than getting stuck the way classical gradient descent does over a rugged loss landscape.
 - **Grover-type search gives a quadratic speedup** for the special case where checking "does $$h_i$$ fit the data" is a black-box oracle query: $$O(\sqrt{\lvert H\rvert})$$ instead of $$O(\lvert H\rvert)$$ (Grover, 1996). Worth being precise here — this is a quadratic, not exponential, speedup, and it only applies when the space is genuinely unstructured (no exploitable ordering to search smarter classically).
+
+
+## References
+[^mercer1909]: J. Mercer (1909). "Functions of positive and negative type, and their connection with the theory of integral equations." *Philosophical Transactions of the Royal Society A*, 209, 415–446.
+[^vc1971]: V. Vapnik & A. Chervonenkis (1971). "On the uniform convergence of relative frequencies of events to their probabilities." *Theory of Probability and Its Applications*, 16(2), 264–280.
+[^aronszajn1950]: N. Aronszajn (1950). "Theory of reproducing kernels." *Transactions of the American Mathematical Society*, 68(3), 337–404.
