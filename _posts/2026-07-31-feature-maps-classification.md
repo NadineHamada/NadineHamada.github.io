@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Feature maps across classical and quantum learning: a formal classification"
-date: 2026-07-29
+date: 2026-07-31
 categories: [Computational Learning Theory]
 ---
 
