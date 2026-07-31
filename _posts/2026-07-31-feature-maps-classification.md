@@ -55,7 +55,7 @@ The two axes that matter classically — *deterministic vs. learned* (where did 
 **General form**, unitary and information-preserving:
 $$x \mapsto |\phi(x)\rangle = U(x)|0\rangle^{\otimes n}$$
 
-This is a pure state: $$\rho(x) = |\phi(x)\rangle\langle\phi(x)|$$, i.e. the pivot inequality is an *equality* here — the special case where nothing has been lost.
+This is a pure state: $$\rho(x) =\phi(x)\rangle\langle\phi(x)$$, i.e. the pivot inequality is an *equality* here — the special case where nothing has been lost.
 
 **Angle encoding**:
 $$|\phi(x)\rangle = \bigotimes_{i=1}^n R_y(x_i)|0\rangle = \bigotimes_{i=1}^n \big(\cos\tfrac{x_i}{2}|0\rangle + \sin\tfrac{x_i}{2}|1\rangle\big)$$
@@ -70,7 +70,7 @@ $$U_\Phi(x) = \exp\Big(i\!\!\sum_{S \subseteq [n],\, |S|\le 2}\!\! \phi_S(x) \pr
 $$|\phi(x,\theta)\rangle = U(\theta_L)U(x)\,U(\theta_{L-1})U(x)\cdots U(\theta_1)U(x)|0\rangle$$
 Data and trainable parameters are interleaved; $\theta$ is optimized exactly like a classical learned map, while the map stays unitary throughout. This shows deterministic/learned is *not* erased by the quantum setting — it nests inside the closed branch as its own sub-axis.
 
-Kernel: $$\ k(x,x') = |\langle\phi(x)|\phi(x')\rangle|^2$$, evaluated via a swap test.
+Kernel: $$\k(x,x') =\langle\phi(x)|\phi(x')\rangle^2$$, evaluated via a swap test.
 
 ---
 
