@@ -5,7 +5,6 @@ date: 2026-07-31
 categories: [Computational Learning Theory]
 ---
 
-
 ## The pivot equation
 
 Every section below returns to one inequality:
