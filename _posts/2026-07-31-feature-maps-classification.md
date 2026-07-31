@@ -27,7 +27,7 @@ $$\phi(x) = (1,\ x_1, \dots, x_n,\ x_1x_2, \dots, x_i x_j, \dots)$$
 
 **RBF / Gaussian kernel feature map** (infinite, implicit — never instantiated):
 $$k(x,x') = \exp(-\gamma\|x-x'\|^2) = \langle \phi(x), \phi(x')\rangle_{\mathcal{H}}, \qquad \dim \mathcal{H} = \infty$$
-Mercer's theorem guarantees $\phi$ exists; the kernel trick means you compute $k$ directly and never write $\phi(x)$ down.
+Mercer's theorem guarantees $$\phi$ exists; the kernel trick means you compute $k$ directly and never write $\phi(x)$ down.
 
 **Random Fourier features** (finite, explicit — a sampled approximation to the infinite RBF space):
 $$\phi(x) = \sqrt{\tfrac{2}{D}}\big[\cos(\omega_1^\top x + b_1), \dots, \cos(\omega_D^\top x + b_D)\big], \quad \omega_i \sim \mathcal{N}(0, 2\gamma I)$$
