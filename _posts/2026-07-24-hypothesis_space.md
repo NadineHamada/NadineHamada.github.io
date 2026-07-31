@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hypothesis Spaces H: From Classical Search to Quantum Superposition"
-date: 2026-07-29
+date: 2026-07-24
 categories: [Computational Learning Theory]
 ---
 ## Background

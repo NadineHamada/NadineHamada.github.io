@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Feature transformation: its relationship to feature maps, spaces, subspaces, and axes"
-date: 2026-07-24
+date: 2026-07-31
 categories: [nlp, quantum-ml]
 ---
  
