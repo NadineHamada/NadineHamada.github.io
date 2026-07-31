@@ -20,7 +20,7 @@ The right-hand side is a **pure state** — a feature map that lives on a single
 
 ### 1.1 Deterministic
 
-A fixed, hand-specified function $\phi: \mathbb{R}^n \to \mathbb{R}^d$ (or into an implicit space), chosen by design, not by data.
+A fixed, hand-specified function $$\phi: \mathbb{R}^n \to \mathbb{R}^d$$ (or into an implicit space), chosen by design, not by data.
 
 **Polynomial features** (finite, explicit):
 $$\phi(x) = (1,\ x_1, \dots, x_n,\ x_1x_2, \dots, x_i x_j, \dots)$$
