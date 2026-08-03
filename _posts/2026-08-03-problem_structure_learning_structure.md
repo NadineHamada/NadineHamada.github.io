@@ -13,7 +13,7 @@ It's the problem itself, not $$H$$. $$H$$only shows up in one of the four rows b
 
 | Row | What possesses the structure | Does $$H$$ even exist here? |
 |---|---|---|
-| **Type A** | The pair $(f, G)$ — the oracle function and the algebraic group it's defined over. Structure = $f$'s invariance under $G$'s cosets | **No.** Factoring has no hypothesis space, no training data, no generalization — it's one fixed computational task |
+| **Type A** | The pair $$(f, G)$$ — the oracle function and the algebraic group it's defined over. Structure = $$f$$'s invariance under $$G$$'s cosets | **No.** Factoring has no hypothesis space, no training data, no generalization — it's one fixed computational task |
 | **Type B** | The physical process / unitary $U$ generating the sampling distribution. Structure = that distribution's probabilities equal a permanent/hafnian | **No.** Boson sampling isn't learning anything from data either |
 | **Inductive bias** | The *relationship* between $$H$$ (your model class) and the data-generating distribution's symmetries | **Yes** — this is the only row where $$H$$ is even the right object to talk about |
 | **Outside the table** | The physical system being simulated, or the cost landscape being searched | **No.** Neither Hamiltonian simulation nor annealing involves a hypothesis space |
