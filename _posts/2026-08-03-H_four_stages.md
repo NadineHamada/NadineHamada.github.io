@@ -4,7 +4,7 @@ title: "The Hidden Boundary in Machine Learning:The Four Stages of a Hypothesis 
 date: 2026-08-03
 categories: [Statistical Learning Theory, VC dimension, inductive bias, No-Free-Lunch, and generalization]
 ---
-# The four-stage life of H: when data actually enters the picture
+
 
 Everything in this piece hangs off one table. Each row below gets its own section — the table is the skeleton, not a summary.
 
