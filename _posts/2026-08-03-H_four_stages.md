@@ -15,7 +15,7 @@ Everything in this piece hangs off one table. Each row below gets its own sectio
 | $$H$$ carries a checkable **inductive bias** | **Yes** — meaningless without a train/unseen split |
 | $$H$$ gets **operated within** (gradient descent) | Yes — needs actual training data |
 
-The line splitting "no" from "yes" falls in the middle, between rows two and three — not, as intuition might suggest, before row one. $H$ can be fully built and fully measured before a single data point exists. Only the *third* stage, where "bias" as a concept becomes meaningful at all, requires data to enter.
+The line splitting "no" from "yes" falls in the middle, between rows two and three — not, as intuition might suggest, before row one. $$H$$ can be fully built and fully measured before a single data point exists. Only the *third* stage, where "bias" as a concept becomes meaningful at all, requires data to enter.
 
 ---
 
@@ -39,11 +39,11 @@ This is where "no" flips to "yes," and it's worth being precise about *why*: "bi
 - **k-NN:** $$H$$ defined by a distance metric and smoothness assumption. "Nearby points share labels" is vacuous until actual labeled points exist.
 - **Variational quantum circuit ansatz:** $$U(\theta)$$ fully specifiable — gate layout, entangling structure — with no data anywhere near it. Whether that entangling pattern matches your actual quantum feature map's data is unknowable until real inputs run through it.
 
-**The general rule these all collapse into:** you can always write $H$'s *shape* from pure design choices — but "shape" and "bias" aren't synonyms. Calling an architecture's structure "an inductive bias" before any train/test split exists is really just "a shape" wearing the more impressive name early. Not wrong — just unearned yet.
+**The general rule these all collapse into:** you can always write $$H$$'s *shape* from pure design choices — but "shape" and "bias" aren't synonyms. Calling an architecture's structure "an inductive bias" before any train/test split exists is really just "a shape" wearing the more impressive name early. Not wrong — just unearned yet.
 
-**The deeper wrinkle — clustering breaks even this once data arrives.** $$H$$ for k-means: all partitions into $k$ Voronoi regions under Euclidean distance — data-free, same as everything above. The bias claim ("prefers convex, similarly-sized clusters") is real and checkable, same structure as the rest. But here's the difference: classification has an unambiguous anchor once data exists — a true label $$y$$, matched or not. Clustering has no such anchor; there's often no external "correct" partition to check against at all, only whatever objective the algorithm optimizes.
+**The deeper wrinkle — clustering breaks even this once data arrives.** $$H$$ for k-means: all partitions into $$k$$ Voronoi regions under Euclidean distance — data-free, same as everything above. The bias claim ("prefers convex, similarly-sized clusters") is real and checkable, same structure as the rest. But here's the difference: classification has an unambiguous anchor once data exists — a true label $$y$$, matched or not. Clustering has no such anchor; there's often no external "correct" partition to check against at all, only whatever objective the algorithm optimizes.
 
-This isn't just practical murkiness — it's a proven impossibility. Kleinberg's 2002 theorem shows no clustering function can simultaneously satisfy scale-invariance (rescaling all distances by a constant shouldn't change the output), richness (every partition should be achievable for some distance function), and consistency (shrinking within-cluster distances and stretching between-cluster distances shouldn't change the output) — for any $n \ge 2$$. So clustering doesn't just delay when its bias becomes checkable the way the other four examples do; it calls into question whether "checkable against ground truth" is even the right frame once data does show up.
+This isn't just practical murkiness — it's a proven impossibility. Kleinberg's 2002 theorem shows no clustering function can simultaneously satisfy scale-invariance (rescaling all distances by a constant shouldn't change the output), richness (every partition should be achievable for some distance function), and consistency (shrinking within-cluster distances and stretching between-cluster distances shouldn't change the output) — for any $$n \ge 2$$. So clustering doesn't just delay when its bias becomes checkable the way the other four examples do; it calls into question whether "checkable against ground truth" is even the right frame once data does show up.
 
 ## Stage 4 — H gets operated within
 
